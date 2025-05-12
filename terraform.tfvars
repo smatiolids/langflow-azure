@@ -1,0 +1,13 @@
+# azure_subscription_id = "your-subscription-id"
+# azure_client_id      = "your-client-id"
+# azure_client_secret  = "your-client-secret"
+# azure_tenant_id      = "your-tenant-id"
+environment          = "dev"
+cluster_name         = "langflow"
+kubernetes_version   = "1.31.1"
+node_count          = 2
+node_vm_size        = "Standard_D2s_v3"
+helm_release_name   = "langflow"
+helm_chart_version  = "0.1.0"
+helm_repository     = "https://langflow-ai.github.io/langflow-helm-charts"  # Update this
+helm_chart_name     = "langflow-ide" 

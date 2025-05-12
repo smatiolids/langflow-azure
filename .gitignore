@@ -1,0 +1,10 @@
+dev.tfvars
+prod.tfvars
+
+.terraform
+.terraform.lock.hcl
+#terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+
+tmp.txt
