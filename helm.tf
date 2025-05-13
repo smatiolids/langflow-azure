@@ -5,7 +5,7 @@ resource "helm_release" "langflow" {
   version    = var.helm_chart_version
   namespace  = "langflow"
   create_namespace = true
-  timeout    = 900  # 15 minutes in seconds
+  timeout    = 300  # 15 minutes in seconds
 
   # Values in values.yaml can be set using the following format:
   values = [
@@ -65,9 +65,6 @@ resource "helm_release" "langflow" {
     value = azurerm_postgresql_flexible_server.postgres.administrator_password
   }
   
-  
-  
-
   set {
     name  = "environment"
     value = var.environment
