@@ -19,6 +19,22 @@ variable "location" {
   default     = "eastus"
 }
 
+variable "postgresql_administrator_login" {
+  type        = string
+  description = "PostgreSQL administrator login"
+}
+
+variable "postgresql_location" {
+  type        = string
+  description = "PostgreSQL location"
+  default     = "westus"
+}
+
+variable "postgresql_administrator_password" {
+  type        = string
+  description = "PostgreSQL administrator password"
+}
+
 # variable "azure_subscription_id" {
 #   type        = string
 #   sensitive   = true

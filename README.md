@@ -47,3 +47,10 @@ az aks get-credentials --resource-group langflow-dev-rg --name langflow-dev
 ```bash
 az aks show --resource-group langflow-dev-rg --name langflow-dev --query fqdn --output tsv
 ```
+
+### Get the cluster credentials
+
+```bash
+az aks get-credentials --resource-group langflow-dev-rg --name langflow-dev --overwrite-existing
+```
+
