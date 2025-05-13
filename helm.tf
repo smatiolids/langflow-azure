@@ -78,6 +78,18 @@ resource "helm_release" "langflow" {
     value = "LoadBalancer"
   }
 
+    # Configure frontend service to use LoadBalancer
+  set {
+    name  = "langflow.frontend.service.type"
+    value = "LoadBalancer"
+  }
+
+  # Configure backend service to use LoadBalancer
+  set {
+    name  = "langflow.backend.service.type"
+    value = "LoadBalancer"
+  }
+
   set {
     name  = "service.externalTrafficPolicy"
     value = "Cluster"
